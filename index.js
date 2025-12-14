@@ -15,6 +15,14 @@ const user = {
     return "no se"
   }
 }
-console.log(user.saludo())
-console.log(user.musica())
+
+const amigos = [
+  {"nombre": "agustin", "pronombre": "lechuga"},
+  {"nombre": "celina", "pronombre": "vacelina"},
+  {"nombre": "daro", "pronombre": "daria"}
+]
+
+console.log(JSON.stringify(amigos))
+//console.log(user.saludo())
+//console.log(user.musica())
 console.log(JSON.stringify(user))
