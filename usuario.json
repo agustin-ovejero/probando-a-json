@@ -1,0 +1,14 @@
+{
+  "nombre": "braiam",
+  "apellido": "nova",
+  "edad": 20,
+  "pasatiempos": ["programar", "fulvo"],
+  "direcion": { "ciudada": "Buenos Aires", "calle": "Alberto williams" },
+  "estudiando": true,
+  "friends": [
+    { "nombre": "agustin", "pronombre": "lechuga" },
+    { "nombre": "celina", "pronombre": "vacelina" },
+    { "nombre": "daro", "pronombre": "daria" },
+    { "nombre": "sandra", "pronombre": "norma" }
+  ]
+}
