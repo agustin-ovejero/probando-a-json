@@ -34,7 +34,23 @@ for (let i = 0; i < amigos.length; i++) {
 //console.log(JSON.stringify(amigos))
 //console.log(user.saludo())
 //console.log(user.musica())
-console.log(user)
-console.log(JSON.stringify(user))
+//console.log(user)
+//console.log(JSON.stringify(user))
 //document.getElementById('people')
 document.getElementById('people').innerHTML = output
+
+
+let postElements = ''
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(Response => {
+    return Response.json()
+  })
+  .then(data => {
+    
+    for (let i = 0; i < data.length; i++) {
+      postElements += `<li>${data[i].userId} - ${data[i].title}</li>`
+    }
+    document.getElementById('post').innerHTML = postElements
+    
+  })
