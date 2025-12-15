@@ -21,8 +21,16 @@ const amigos = [
   {"nombre": "celina", "pronombre": "vacelina"},
   {"nombre": "daro", "pronombre": "daria"}
 ]
+user.friends = amigos
 
-console.log(JSON.stringify(amigos))
+let output = ''
+
+for (let i = 0; i < amigos.length; i++) {
+  output = output + `<li>${amigos[i].nombre}</li>`
+}
+//console.log(JSON.stringify(amigos))
 //console.log(user.saludo())
 //console.log(user.musica())
-console.log(JSON.stringify(user))
+//console.log(JSON.stringify(user))
+document.getElementById('people')
+document.getElementById('people').innerHTML = output
